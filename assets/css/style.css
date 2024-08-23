@@ -1,0 +1,116 @@
+html, body {
+  height: 100%; /* Asegura que el HTML y el body tengan altura completa */
+  margin: 0; /* Elimina el margen por defecto */
+  padding: 0; /* Elimina el padding por defecto */
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-image: url('../img/star wars.jpg'); /* Cambia la ruta a la ubicación de tu imagen */
+  background-size: cover; /* Asegura que la imagen cubra todo el fondo */
+  background-position: center; /* Centra la imagen */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  font-family: "Iceland", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+  padding: 0 auto;
+}
+
+h1 {
+  text-align: center; /* Centrar el título */
+  margin-bottom: 10px;
+}
+
+.line {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.point {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  position: relative;
+  margin: 25px 0; /* Espacio entre recuadros principales */
+}
+
+.point span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  background-color: #956d07;
+  border-radius: 30px;
+  padding: 10px;
+  box-shadow: 0 0 3px rgb(250, 251, 251);
+  width: 250px;
+  cursor: pointer;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.orange {
+  background-color: rgb(247, 36, 3);
+}
+
+.lightgreen {
+  background-color: lightgreen;
+}
+
+.skyblue {
+  background-color: skyblue;
+}
+
+.description {
+  color: #070000;
+  flex: 1;
+}
+
+.details {
+  display: none ;
+  position: absolute;
+  left: 270px; /* Mostrar la información a la derecha del recuadro */
+  top: 0;
+  width: auto; /* Ajustar automáticamente el ancho al contenido */
+  padding: 10px;
+  background-color: #956d07;
+  border-radius: 30px;
+  box-shadow: 0 0 5px rgb(240, 237, 237);
+  z-index: 10;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px; /* Espacio entre los personajes */
+}
+
+.details .character-block {
+  background-color: #f4c509f6;
+  border: 1px solid #fffdfd;
+  border-radius: 30px;
+  padding: 10px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0; /* Evitar que los bloques de personajes se reduzcan */
+  white-space: nowrap; /* Evitar que el texto se divida en varias líneas */
+  display: flex;
+  align-items: center;
+}
+
+.details .character-block .details-circle {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
